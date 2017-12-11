@@ -1,7 +1,6 @@
-## TwitterHashtagsSparkStreaming
-Real Time Data Streaming with Spark and Kibana Dashboard Display: Twitter Hashtag Count Analysis
+# Real Time Data Streaming with Spark: Twitter Hashtag Count Analysis
 
-## Project Flow: Consists of three major steps such as-
+## Project Flow
 Querying Data from Twitter using Twitter API
 Sending Data Streams into Spark and perform data processing using Spark Streaming
 Pushing the processed data on live Dashboard
@@ -29,10 +28,10 @@ $ brew install apache-spark
 ### Make sure JDK is installed before beginning the above steps.
 
 
-## Install Elasticsearch 5.6.0
+## Install Elasticsearch
 https://www.elastic.co/guide/en/elasticsearch/reference/current/_installation.html
 
-### View on browser to verify elastic search is set up
+### View on browser
 http://127.0.0.1:9200/ 
 
 
@@ -91,13 +90,13 @@ http://127.0.0.1:9200/twitter/_search?pretty=true
   `$ pip install -r REQUIREMENTS`
 
 ### Copy file elasticsearch-spark-20_2.11-5.5.0.jar in jars folder
-$ cp jars/elasticsearch-spark-20_2.11-5.5.0.jar ve/lib/python3.6/site-packages/pyspark/jars/
+$ cp jars/elasticsearch-spark-20_2.11-5.5.0.jar ve/lib/python/site-packages/pyspark/jars/
 
 
 ### Run "twitterfetch_app.py" to get tweets
 $ python twitterfetch_app.py
 
-### Run "twitterfetch_app.py" to store data in spark RDD and transfer it to elasticsearch via Index setup
+### Run "twitterfetch_app.py" to store data in spark RDD and transfer it to elasticsearch
 $ python sparkstreams_app.py
 
 ### Spark UI
@@ -106,7 +105,7 @@ http://127.0.0.1:4042/
 ## Install Kibana
 https://www.elastic.co/downloads/kibana
 
-### View on browser for Kibana Dashboard
+### View on browser
 http://127.0.0.1:5601/
 
 
